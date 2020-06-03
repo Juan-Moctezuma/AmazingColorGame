@@ -14,4 +14,5 @@ Click the following link to visit the game's site: https://juan-moctezuma.github
 1. HTML
 2. CSS
 3. Javascript
-   *Bootstrap
+   * Bootstrap
+   * Ajax
