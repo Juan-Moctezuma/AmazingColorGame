@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="rgbGame.css">
+</head>
+<body>
+	<h1>
+	Juan's Amazing Color Game
+	<br>
+		<span id="colorDisplay">RGB</span> 
+	<br>
+	</h1>
+	
+	<div id="stripe">
+		<button id="modal" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">INFO</button>
+		<div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog">
+      			<div class="modal-content">
+        			<div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h2 class="modal-title">Important Information</h2>
+       				</div>
+        			<div class="modal-body">
+        				<h4>What is RGB?</h4>
+        					<p>This term stands for Red Green Blue, and refers to a model based on three color shades (hues of light) that can be combined in order to produce other color profiles. Each color's or channel's values can be adjusted; and these values range from 0 - 255. For instance, RGB(0,0,0) and RGB(255, 255, 255) are equivalent to pure black and all-white respectively.</p>
+        				<h5>FUN FACT</h5>
+        					<p>Combining red, green, and blue light is the standard method of producing color images on screens.</p>
+        					<img style="display: block; margin-left: auto; margin-right: auto;" src="rgbGame_Assets/RGB.png" />
+        					<br><br>
+        				<h4>How does this game work?</h4>
+        						<p>The user needs to click on the color that matches the 'RGB(x,x,x)' being displayed up top. Please note that the displayed RGB colors change along with the square's colors. The goal is to estimate or guess the correct color. The user may select the level of difficulty (easy or hard).</p><br>
+          					<h5>What does the user need to do and look at?</h5>
+          						<p>Please observe the images below. </p>
+          						<img style="width: 270px; height: 300px; margin-right: 20px;" src="rgbGame_Assets/Header1.png" />
+          						<img style="width: 270px; height: 300px;" src="rgbGame_Assets/Header2.png" /><br><br>
+          					<h5>Easy vs. Hard</h5>
+          						<p>The easy setting simply contains 6 squares, while the hard game has 9.</p>
+          						<img style="width: 270px; height: 300px; margin-right: 20px;" src="rgbGame_Assets/Easy.png" />
+          						<img style="width: 270px; height: 300px;" src="rgbGame_Assets/Hard.png" /><br><br>
+          					<h5>When is the game over?</h5>
+          						<p>A message displaying 'Try Again' shows up below the header to let the user know that the game is not done. Once the user selects the right color, 'correct' gets displayed.</p>
+          						<img style="width: 270px; height: 300px; margin-right: 20px;" src="rgbGame_Assets/Try_Again.png" />
+          						<img style="width: 270px; height: 300px;" src="rgbGame_Assets/Correct.png" /><br><br>
+          					<h5>How can the user reset any game?</h5>
+          						<p>Click on 'NEW COLORS' or 'PLAY AGAIN' (after winning). Switching between 'EASY' and 'HARD', or clicking on one of these resets the game as well.</p>
+          						<img style="width: 270px; height: 300px; margin-right: 20px;" src="rgbGame_Assets/New_Colors.png" />
+          						<img style="width: 270px; height: 300px;" src="rgbGame_Assets/Play_Again.png" /><br>			
+        			</div>
+        			<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>   
+    		</div>
+  		</div>
+		<button id="reset">New Colors</button>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+		<span id="message"></span>
+	</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+<script type="text/javascript" src="rgbGame.js"></script>
+</body>
+</html>
