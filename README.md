@@ -13,7 +13,7 @@ Click the following link to visit the game's site: https://juan-moctezuma.github
 No.
 
 ### Directory Tree
-<img src="Image/Directory_RGB_Game.png" width="50%">
+<img src="Image/Directory_RGB_Game.png" width="25%">
 
 ### Technologies
 
